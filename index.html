@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aiden Seay’s federal resume — cybersecurity, backend development, space object characterization, and applied research.">
+  <title>Aiden Seay | Federal Resume</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #16283f; background: #eef2f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .top-line { height: 5px; background: #2766a0; }
+    header, main, footer { max-width: 1120px; margin: auto; padding-inline: clamp(20px, 4vw, 48px); }
+    header { padding-block: 38px 28px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .eyebrow { margin: 0 0 6px; font-size: .875rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; color: #47617a; }
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 2.8rem); letter-spacing: -.04em; line-height: 1.15; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; font-size: 1rem; }
+    a { color: #205786; text-underline-offset: 4px; }
+    a:hover { color: #102f4b; }
+    a:focus-visible { outline: 3px solid #bc6800; outline-offset: 5px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 46px; padding: 11px 18px; border: 1px solid #b3c2d0; border-radius: 6px; text-decoration: none; font-size: 1rem; font-weight: 600; background: white; }
+    .primary { color: white; background: #173b60; border-color: #173b60; }
+    .primary:hover { color: white; background: #245480; }
+    .document { background: white; border: 1px solid #c7d1dd; border-radius: 8px; overflow: hidden; box-shadow: 0 12px 35px #16283f0c; }
+    .document-bar { display: flex; justify-content: space-between; gap: 16px; align-items: center; padding: 16px 20px; border-bottom: 1px solid #d8e0e8; }
+    h2 { margin: 0; font-size: 1rem; font-weight: 650; }
+    .format { color: #52657a; font-size: .875rem; }
+    object { display: block; width: 100%; height: 1050px; height: max(650px, 85vh); border: 0; }
+    .fallback { padding: 30px; line-height: 1.7; }
+    .help { margin: 16px 0 0; color: #52657a; font-size: .875rem; line-height: 1.6; }
+    footer { padding-block: 24px 32px; color: #52657a; font-size: .875rem; }
+    @media (max-width: 600px) { header { padding-top: 26px; } .actions { width: 100%; } .button { flex: 1; } object { height: 75vh; min-height: 480px; } .document-bar { padding: 14px; } }
+  </style>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header>
+    <div>
+      <p class="eyebrow">Federal resume</p>
+      <h1>Aiden Seay</h1>
+      <nav aria-label="Contact and profiles">
+        <a href="mailto:aidengseay@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/aidengseay">LinkedIn</a>
+        <a href="https://github.com/aidengseay">GitHub</a>
+      </nav>
+    </div>
+    <div class="actions">
+      <a class="button" href="./resume.pdf" target="_blank" rel="noopener">Open PDF<span style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"> (new tab)</span></a>
+      <a class="button primary" href="./resume.pdf" download="Aiden-Seay-Federal-Resume.pdf">Download resume</a>
+    </div>
+  </header>
+  <main>
+    <section class="document" aria-labelledby="document-title">
+      <div class="document-bar"><h2 id="document-title">Federal Resume</h2><span class="format">PDF document</span></div>
+      <!-- Keep the PDF in the same directory as this file. -->
+      <object data="./resume.pdf#view=FitH" type="application/pdf" aria-label="Aiden Seay’s federal resume">
+        <div class="fallback"><p>Your browser cannot display this PDF here.</p><a href="./resume.pdf">Open the resume PDF</a> to read it.</div>
+      </object>
+    </section>
+    <p class="help">Having trouble viewing the document? <a href="./resume.pdf">Open the PDF directly.</a></p>
+  </main>
+  <footer>Aiden Seay · Federal Resume</footer>
+</body>
+</html>
